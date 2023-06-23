@@ -59,7 +59,7 @@ if __name__ == '__main__':
 
         features = [age, sex, cp, trtstbps, chol, fbs, restecg, thalachh, exng, oldpeak, slope, caa, thal]
 
-        features = pd.DataFrame([features], columns=cols)
+        features = pd.DataFrame([features], columns=hdt_cols)
 
         res = best_model.predict(features)
 
